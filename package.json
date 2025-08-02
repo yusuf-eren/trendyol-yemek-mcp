@@ -1,6 +1,6 @@
 {
   "name": "trendyol-yemek-mcp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "bin": {
     "trendyol-yemek-mcp": "dist/index.js"
@@ -13,7 +13,14 @@
     "tsx": "tsx index.ts",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["mcp", "trendyol", "yemek", "food-delivery", "turkey", "restaurant"],
+  "keywords": [
+    "mcp",
+    "trendyol",
+    "yemek",
+    "food-delivery",
+    "turkey",
+    "restaurant"
+  ],
   "author": "",
   "license": "ISC",
   "description": "Model Context Protocol server for Trendyol Yemek restaurant and menu data",
