@@ -18,6 +18,7 @@ export function filteredRestaurantToLLMString(
 
   return `
   Restaurant ${index + 1}: ${r.name}
+  ID: ${r.id}
   Cuisines: ${r.kitchen}
   Location: ${r.location.neighborhoodName} (${r.location.distance} km away)
   Rating: ${r.rating} ${r.ratingText}
@@ -49,6 +50,7 @@ export function searchedRestaurantToLLMString(
 
   return `
 Restaurant ${index + 1}: ${r.name}
+ID: ${r.id}
 Cuisines: ${r.kitchen}
 Location: ${r.location.neighborhoodName} (${r.location.distance} km away)
 Rating: ${r.rating} ${r.ratingText}

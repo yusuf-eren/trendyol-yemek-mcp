@@ -9,7 +9,7 @@ import {
 export async function getRestaurantProducts(
   params: z.infer<typeof GetRestaurantProductsSchema>
 ): Promise<GetRestaurantProductsResponse> {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
   await browser.setCookie({
     name: 'tgo-lang',
     value: 'tr',
