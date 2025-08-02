@@ -1,0 +1,4 @@
+dist
+node_modules
+test-scrape.ts
+.DS_Store
