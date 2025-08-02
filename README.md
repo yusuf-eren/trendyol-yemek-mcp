@@ -107,7 +107,34 @@ The system supports 25 different cuisine categories:
 
 ## Installation & Usage
 
+### For End Users (Using Published Package)
+
+If you want to use this MCP server with an AI assistant that supports MCP:
+
+#### Option 1: Using npx (Recommended for one-time use)
 ```bash
+# Run directly without installing globally
+npx trendyol-yemek-mcp
+```
+
+#### Option 2: Global Installation
+```bash
+# Install the published package globally
+npm install -g trendyol-yemek-mcp
+
+# Run the MCP server
+trendyol-yemek-mcp
+```
+
+**Note:** The package is available on npm as `trendyol-yemek-mcp`. Using `npx` is recommended for testing or one-time usage as it doesn't require global installation.
+
+### For Developers (Local Development)
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd trendyol-yemek-mcp
+
 # Install dependencies
 npm install
 
@@ -116,6 +143,21 @@ npm run build
 
 # Run the MCP server
 npm start
+```
+
+### MCP Client Configuration
+
+To use this MCP server with an MCP client (like Claude Desktop, etc.), add it to your MCP configuration:
+
+```json
+{
+  "mcpServers": {
+    "trendyol-yemek": {
+      "command": "trendyol-yemek-mcp",
+      "args": []
+    }
+  }
+}
 ```
 
 ## Dependencies
