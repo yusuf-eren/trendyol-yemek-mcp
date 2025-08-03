@@ -2,6 +2,25 @@
 
 A Model Context Protocol (MCP) server that provides access to Trendyol Yemek's restaurant and menu data. This MCP allows AI assistants to search for restaurants, filter by various criteria, and retrieve detailed menu information from Turkey's popular food delivery platform.
 
+## Quick Start
+
+```bash
+npx trendyol-yemek-mcp
+```
+
+## Claude Desktop Configuration
+
+```json
+{
+  "mcpServers": {
+    "trendyol-yemek": {
+      "command": "npx",
+      "args": ["trendyol-yemek-mcp"]
+    }
+  }
+}
+```
+
 ## Features
 
 - **Restaurant Discovery**: Find restaurants by location with advanced filtering
